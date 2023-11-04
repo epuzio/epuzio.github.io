@@ -1,19 +1,18 @@
 /* navbar css */
 /* scooped from chat gdp, will edit later*/
-/* Reset some default styles to ensure consistent rendering */
+
+
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Style the navigation bar */
-.navbar {
+.navbar-desktop {
   background-color: #333; /* Background color */
   overflow: hidden;
 }
 
-/* Style the navigation bar links */
-.navbar a {
+.navbar-desktop a {
   float: left; /* Make the links appear horizontally */
   display: block; /* Display as block-level elements */
   color: white; /* Text color */
@@ -22,14 +21,13 @@ body {
   text-decoration: none; /* Remove underlines from links */
 }
 
-/* Change the color of the links on hover */
-.navbar a:hover {
+.navbar-desktop a:hover {
   background-color: #ddd; /* Background color on hover */
   color: black; /* Text color on hover */
 }
 
 /* Add a class to style the active link (current page) */
-.navbar a.active {
+.navbar-desktop a.active {
   background-color: #4CAF50; /* Background color for the active link */
   color: white; /* Text color for the active link */
 }
