@@ -1,33 +1,44 @@
-/* navbar css */
-/* scooped from chat gdp, will edit later*/
-
-
 body {
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
+header img {
+  display: block;
+  height: 84px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+
 .navbar-desktop {
-  background-color: #333; /* Background color */
+  position: absolute;
   overflow: hidden;
 }
 
 .navbar-desktop a {
-  float: left; /* Make the links appear horizontally */
-  display: block; /* Display as block-level elements */
-  color: white; /* Text color */
-  text-align: center; /* Center the text */
-  padding: 14px 16px; /* Padding around the links */
-  text-decoration: none; /* Remove underlines from links */
+  float: left; 
+  display: flex; 
+  color: black; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: right; 
+  padding: 14px 16px; 
+  text-decoration: none; 
 }
 
+/* hover over link */
 .navbar-desktop a:hover {
-  background-color: #ddd; /* Background color on hover */
-  color: black; /* Text color on hover */
+  color: #7d766f; 
 }
 
-/* Add a class to style the active link (current page) */
+/* current page link */
 .navbar-desktop a.active {
-  background-color: #4CAF50; /* Background color for the active link */
-  color: white; /* Text color for the active link */
+  color: #d69c57; 
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
