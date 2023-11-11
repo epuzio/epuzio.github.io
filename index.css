@@ -1,0 +1,17 @@
+body {
+    margin: 1;
+    max-width: 50em;
+}
+
+.About-Block {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+
+.About-Text {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+}
