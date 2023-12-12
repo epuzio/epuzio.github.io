@@ -1,0 +1,35 @@
+body {
+    margin: 1;
+    max-width: 50em;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+.About-Block {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+
+.About-Text {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+}
+
+.image-container {
+    max-width: 100%; /* Ensure the image container doesn't exceed its parent's width */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Ensure the container behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally if needed */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container width */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Ensure the image behaves as a block element */
+  }

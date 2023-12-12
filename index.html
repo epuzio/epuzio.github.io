@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<!-- Coded with love by Esmé Puzio :~) -->
 
 <html lang="en" data-predefined-style="true" data-css-presets="true" data-css-preset data-typography-preset>
 <head>
+    <!-- Include PDF.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.13.272/pdf.min.js"></script>
+
+    <!-- link to bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
+    
+    <!-- include misc css for formatting -->
     <link href="navbar-desktop.css" rel="stylesheet" type="text/css">
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="page-formatting.css" rel="stylesheet" type="text/css">
+
     <title>Esmé Puzio</title>
 </head>
 
-  <!-- include navbar -->
-<nav id="navbar-desktop">
-  <script type="text/javascript" src="navbar.js"></script>
-</nav>
-<br>
 
 
 <body>
-  <!-- page content -->
-  <div style="padding-left:16px">
-    <p>whoa</p>
-  </div>
+    <!-- include navbar -->
+  <nav id="navbar-desktop">
+    <script type="text/javascript" src="javascript/navbar.js"></script>
+  </nav>
 
+  <!-- about -->
   <div class="About-Block">
-    <img src="placeholder.png" alt="placeholder">
+    <div class="image-container">
+      <img src="assets/images/placeholder.png" alt="placeholder">
+    </div>
     <div class="About-Text">
       <h2>About (?)</h2>
       <p>Esmé Puzio is currently pursuing her B.S. in Computer Science at the 
         University of California, Santa Barbara, with a minor in Art. She's 
         interested in post-internet art, UI/UX design, and the ways in which 
-        art and technology can complement and further develop one another. 
+        art and technology can complement one another. 
 
         As an artist, she enjoys making colorful and communicative 
         designs, and has been illustrating articles for the Daily Nexus 
@@ -37,5 +42,16 @@
     </div>
   </div>
 
+  <!-- resume/pdf viewer -->
+  <script src="javascript/pdf-viewer.js"></script>
+  <script>
+    const url = 'assets/documents/Esmé Puzio - Resume.pdf';
+    const containerId = 'pdf-viewer';
+    initializePdfViewer(url, containerId);
+  </script>
+
+
+  <script src="javascript/navbar.js"></script>
+  
 </body>
 </html>
