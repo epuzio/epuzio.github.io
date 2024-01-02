@@ -8,28 +8,31 @@ h2 {
     padding-top: 1em;
 }
 
-.About-Block {
+.about-block {
     background-color: tomato;
     color: white;
     padding: 10px;
 }
 
-.About-Text {
+.about-text {
+    width: 60%;
     background-color: white;
     color: black;
     border: none;
-    padding: 10px;
 }
 
-.image-container {
-    max-width: 100%; /* Ensure the image container doesn't exceed its parent's width */
-    height: auto; /* Maintain the image's aspect ratio */
-    display: block; /* Ensure the container behaves as a block element */
-    margin: 0 auto; /* Center the image horizontally if needed */
+.about-image {
+    width: 40%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
-  
-  .image-container img {
-    max-width: 100%; /* Make sure the image doesn't exceed its container width */
-    height: auto; /* Maintain the image's aspect ratio */
-    display: block; /* Ensure the image behaves as a block element */
-  }
+}
