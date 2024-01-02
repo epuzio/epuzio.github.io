@@ -2,31 +2,34 @@
 
 <html lang="en" data-predefined-style="true" data-css-presets="true" data-css-preset data-typography-preset>
 <head>
-    <!-- Include PDF.js from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.13.272/pdf.min.js"></script>
+  <!-- Include PDF.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.7.107/pdf.min.js"></script>
 
-    <!-- link to bootstrap CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
-    
-    <!-- include misc css for formatting -->
-    <link href="navbar-desktop.css" rel="stylesheet" type="text/css">
-    <link href="page-formatting.css" rel="stylesheet" type="text/css">
+  <!-- javascript -->
+  <script src="javascript/pdf-viewer.js"></script>
+  <script src="javascript/navbar.js"></script>
+  
+  <!-- link to bootstrap CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
+  
+  <!-- include misc css for formatting -->
+  <link href="navbar-desktop.css" rel="stylesheet" type="text/css">
+  <link href="page-formatting.css" rel="stylesheet" type="text/css">
 
-    <title>Esmé Puzio</title>
+  <title>Esmé Puzio</title>
 </head>
-
-
 
 <body>
     <!-- include navbar -->
-  <nav id="navbar-desktop">
-    <script type="text/javascript" src="javascript/navbar.js"></script>
-  </nav>
+    <div class="navbar-desktop">
+      <div id="navbar-links">
+      </nav>
+    </div>
 
   <!-- about -->
   <div class="About-Block">
     <div class="image-container">
-      <img src="assets/images/placeholder.png" alt="placeholder">
+      <img src="assets/images/placeholder-2.png" alt="placeholder">
     </div>
     <div class="About-Text">
       <h2>About (?)</h2>
@@ -42,16 +45,13 @@
     </div>
   </div>
 
-  <!-- resume/pdf viewer -->
-  <script src="javascript/pdf-viewer.js"></script>
-  <script>
-    const url = 'assets/documents/Esmé Puzio - Resume.pdf';
-    const containerId = 'pdf-viewer';
-    initializePdfViewer(url, containerId);
-  </script>
-
-
-  <script src="javascript/navbar.js"></script>
-  
+  <div id="pdf-viewer">
+    <script>
+      console.log('calling.');
+      const url = 'assets/documents/Esmé Puzio - Resume.pdf';
+      const containerId = 'pdf-viewer';
+      initializePdfViewer(url, containerId);
+    </script>
+  </div>
 </body>
 </html>

@@ -22,3 +22,5 @@ function initializePdfViewer(pdfUrl, containerId) {
         console.error('Error loading PDF:', error);
     })
 };
+
+window.addEventListener('DOMContentLoaded', initializePdfViewer);
