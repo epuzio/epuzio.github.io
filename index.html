@@ -27,27 +27,45 @@
     </div>
 
   <!-- about -->
-  <div class="row about-block">
-    <div class="column about-image">
-      <img src="assets/images/placeholder-2.png" alt="placeholder">
-    </div>
-    <div class="column about-text">
-      <h2>About (?)</h2>
-      <p>Esmé Puzio is currently pursuing her B.S. in Computer Science at the 
-        University of California, Santa Barbara, with a minor in Art. She's 
-        interested in post-internet art, UI/UX design, and the ways in which 
-        art and technology can complement one another. 
+  <div class="page">
+    <div class="row about-block">
+      <div class="column about-image">
+        <img src="assets/images/placeholder-2.png" alt="placeholder" width="100%" style="display: block; margin: 0 auto;">
+      </div>
+      <div class="column about-text">
+        <h2 style="margin-top: 0;">About</h2>
+        <p style="margin-top: 0;">Esmé Puzio is a fourth-year Computer Science student at the 
+          University of California, Santa Barbara. She's 
+          interested in post-internet art, UI/UX design, and the ways in which 
+          art and technology can complement one another. 
 
-        As an artist, she enjoys making colorful and communicative 
-        designs, and has been illustrating articles for the Daily Nexus 
-        newspaper since 2021. 
+          As an artist, Esmé enjoys making colorful and communicative 
+          designs, and she has been illustrating articles for the Daily Nexus 
+          newspaper since 2021. 
         </p>
+        <h2>Contact</h2>
+        <div>
+          <button onclick="location.href='mailto:esmepuzio@ucsb.edu'" button class="button">
+            <img src="assets/images/gmail.png" width="22">
+            Email
+          </button>
+          <button onclick="https://www.linkedin.com/in/esme-puzio-124111220/" button class="button">
+            <img src="assets/images/linkedin.png" width="18">
+            LinkedIn
+          </button>
+          <button onclick="https://github.com/epuzio" button class="button">
+            <img src="assets/images/github.png" width="20">
+            GitHub
+          </button>
+      </div>
     </div>
+
+      <h2>Resume</h2>
+      <iframe id="pdfViewer" src="assets/documents/EsmePuzioResume.pdf" title="webviewer" frameborder="0" width="100%" height = "600"></iframe>
+
   </div>
 
-  <div>
-    <iframe id="pdf-js-viewer" src="assets/documents/EsmePuzioResume.pdf" title="webviewer" frameborder="0" width="500" height="600"></iframe>
-  </div>
+    
 
 </body>
 </html>
