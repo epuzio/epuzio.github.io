@@ -1,32 +1,32 @@
 body {
-  margin: 1;
-  max-width: 50em;
+  max-width: 70em;
+  margin: 0 auto; /* Set left and right margins to auto */
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .page {
     display: block;
     margin: 0 auto;
-    margin-bottom: 0.5cm;
-    padding: 0.5cm;
-    page-break-after: always;
+    padding: .95em;
+    page-break-after: always; 
 }
 
 .about-block {
-    background-color: tomato;
-    color: white;
-    padding: 10px;
+  background-color: tomato;
+  color: white;
+  padding: 20px;
 }
 
 .about-text {
-    width: 60%;
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 10px;
+  width: 60%;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 15px;
 }
 
 .about-image {
-    width: 40%;
+  width: 40%;
 }
 
 .row:after {
@@ -54,4 +54,59 @@ body {
 .button:hover {
   background-color: #04AA6D;
   color: white;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar-pages a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  align-content: right;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: orange;
+}
+
+.navbar a:active {
+  background-color: orange;
+  color: black;
+}
+
+.project-block {
+  background-color: indigo;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  /* width: 80%; */
+  margin: 0 auto; /* Set left and right margins to auto */
+}
+
+.project-block:hover {
+  background-color: indigo;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-txt {
+  width: 60%;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 15px;
+}
+
+.project-img {
+  width: 40%;
 }

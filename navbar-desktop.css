@@ -1,54 +1,54 @@
 html { /* idk if needed */
-  width: 100%;
-  height: 100%;
-  color: black;
-  background-color: rgb(211, 212, 210);
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  text-align: center;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
-
-header img {
-  display: block;
-  height: 84px;
-  cursor: pointer;
-  margin-right: auto;
-}
-
-
-.navbar-desktop {
-  position: absolute;
-  overflow: hidden;
-}
-
-.navbar-desktop a {
-  float: left; 
-  display: flex; 
-  color: black; 
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: right; 
-  padding: 14px 16px; 
-  text-decoration: none; 
-}
-
-/* hover over link */
-.navbar-desktop a:hover {
-  color: #7d766f; 
-}
-
-/* current page link */
-.navbar-desktop a.active {
-  color: #d69c57; 
-}
-
-.logo {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: rgb(211, 212, 210);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  header img {
+    display: block;
+    height: 84px;
+    cursor: pointer;
+    margin-right: auto;
+  }
+  
+  
+  .navbar-desktop {
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .navbar-desktop a {
+    float: left; 
+    display: flex; 
+    color: black; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+  }
+  
+  /* hover over link */
+  .navbar-desktop a:hover {
+    color: #7d766f; 
+  }
+  
+  /* current page link */
+  .navbar-desktop a.active {
+    color: #d69c57; 
+  }
+  
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }

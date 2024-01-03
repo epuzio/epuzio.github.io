@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 
 <html lang="en" data-predefined-style="true" data-css-presets="true" data-css-preset data-typography-preset>
-<head>
-  <!-- Include PDF.js from CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.7.107/pdf.min.js"></script>
+  <head>
+    <!-- Include PDF.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.7.107/pdf.min.js"></script>
 
-  <!-- javascript -->
-  <script src="javascript/pdf-viewer.js"></script>
-  <script src="javascript/navbar.js"></script>
-  
-  <!-- link to bootstrap CDN-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
-  
-  <!-- include misc css for formatting -->
-  <link href="navbar-desktop.css" rel="stylesheet" type="text/css">
-  <link href="page-formatting.css" rel="stylesheet" type="text/css">
-
-  <title>Esmé Puzio</title>
-</head>
-
-<body>
-    <!-- include navbar -->
-    <div class="navbar-desktop">
-      <div id="navbar-links">
-      </nav>
-    </div>
-
-  <!-- about -->
-  <div class="page">
-    <div class="row about-block">
-      <div class="column about-image">
-        <img src="assets/images/placeholder-2.png" alt="placeholder" width="100%" style="display: block; margin: 0 auto;">
-      </div>
-      <div class="column about-text">
-        <h2 style="margin-top: 0;">About</h2>
-        <p style="margin-top: 0;">Esmé Puzio is a fourth-year Computer Science student at the 
-          University of California, Santa Barbara. She's 
-          interested in post-internet art, UI/UX design, and the ways in which 
-          art and technology can complement one another. 
-
-          As an artist, Esmé enjoys making colorful and communicative 
-          designs, and she has been illustrating articles for the Daily Nexus 
-          newspaper since 2021. 
-        </p>
-        <h2>Contact</h2>
-        <div>
-          <button onclick="location.href='mailto:esmepuzio@ucsb.edu'" button class="button">
-            <img src="assets/images/gmail.png" width="22">
-            Email
-          </button>
-          <button onclick="https://www.linkedin.com/in/esme-puzio-124111220/" button class="button">
-            <img src="assets/images/linkedin.png" width="18">
-            LinkedIn
-          </button>
-          <button onclick="https://github.com/epuzio" button class="button">
-            <img src="assets/images/github.png" width="20">
-            GitHub
-          </button>
-      </div>
-    </div>
-
-      <h2>Resume</h2>
-      <iframe id="pdfViewer" src="assets/documents/EsmePuzioResume.pdf" title="webviewer" frameborder="0" width="100%" height = "600"></iframe>
-
-  </div>
-
+    <!-- link to bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
     
+    <!-- include misc css for formatting -->
+    <link href="navbar-desktop.css" rel="stylesheet" type="text/css">
+    <link href="page-formatting.css" rel="stylesheet" type="text/css">
 
-</body>
+    <title>Esmé Puzio</title>
+  </head>
+
+  <body>
+      <!-- navbar -->
+      <div class="navbar">
+        <a img class="logo" src="placeholder-2.png" alt="Esmé Puzio">
+            
+        <div class="navbar-pages">
+          <a class="active" href="index.html" >Home</a>
+          <a href="art.html">Portfolio</a>
+          <a href="cs.html">Projects</a>
+        </div>
+      </div>
+
+    <!-- about -->
+      <div class ="page">
+        <div class="row about-block">
+          <div class="column about-image">
+            <img src="assets/images/placeholder-2.png" alt="placeholder" width="100%" style="display: block; margin: 0 auto;">
+          </div>
+          <div class="column about-text">
+            <h2 style="margin-top: 0;">About</h2>
+            <p style="margin-top: 0;">Esmé Puzio is a fourth-year Computer Science student at the 
+              University of California, Santa Barbara. She's 
+              interested in post-internet art, UI/UX design, and the ways in which 
+              art and technology can complement one another. 
+
+              As an artist, Esmé enjoys making colorful and communicative 
+              designs, and she has been illustrating articles for the Daily Nexus 
+              newspaper since 2021. 
+            </p>
+            <h2>Contact</h2>
+            <div>
+              <button onclick="location.href='mailto:esmepuzio@ucsb.edu'" button class="button">
+                <img src="assets/images/gmail.png" width="22">
+                Email
+              </button>
+              <button onclick="https://www.linkedin.com/in/esme-puzio-124111220/" button class="button">
+                <img src="assets/images/linkedin.png" width="18">
+                LinkedIn
+              </button>
+              <button onclick="https://github.com/epuzio" button class="button">
+                <img src="assets/images/github.png" width="20">
+                GitHub
+              </button>
+          </div>
+        </div>
+
+        <h2>Resume</h2>
+        <iframe id="pdfViewer" src="assets/documents/EsmePuzioResume.pdf" title="webviewer" frameborder="0" width="100%" height = "600"></iframe>
+    </div>
+  </body>
 </html>

@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 
 <html lang="en" data-predefined-style="true" data-css-presets="true" data-css-preset data-typography-preset>
-<head>
+  <head>
+    <!-- Include PDF.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.7.107/pdf.min.js"></script>
+    
+    <!-- link to bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
+    
+    <!-- include misc css for formatting -->
     <link href="navbar-desktop.css" rel="stylesheet" type="text/css">
     <link href="page-formatting.css" rel="stylesheet" type="text/css">
-    <title>CS - Esmé Puzio</title>
-</head>
 
-  <!-- include navbar -->
-<nav id="navbar-desktop">
-  <script type="text/javascript" src="navbar.js"></script>
-</nav>
-<br>
+    <title>Esmé Puzio</title>
+  </head>
 
-<body>
-  <!-- page content -->
-  <div style="padding-left:16px">
-    <p>:~D</p>
-  </div>
-  
-</body>
+  <body>
+      <!-- navbar -->
+      <div class="navbar">
+        <a img class="logo" src="placeholder-2.png" alt="Esmé Puzio">
+            
+        <div class="navbar-pages">
+          <a href="index.html" >Home</a>
+          <a href="art.html">Portfolio</a>
+          <a class="active" href="cs.html">Projects</a>
+        </div>
+      </div>
+
+    <!-- about -->
+      <div class ="page">
+        <div class="row project-block"> 
+          <div class="project-img">
+            <img src="assets/images/raetracer-phong.png" alt="raetracer-phong" width="80%" style="display: block; margin: 0 auto;">
+          </div>
+          <div class="project-txt">
+            <h2>
+              RaeTracer (2023)
+            </h2>
+            <p>
+              Made with: add logo later
+            </p>
+            <p>
+              Basic Phong shader for simple geometric shapes.
+          </div>
+        </div>
+
+        <div class="row project-block"> 
+          <div class="project-img">
+            <img src="assets/images/placeholder.png" alt="placeholder" width="80%" style="display: block; margin: 0 auto;">
+          </div>
+          <div class="project-txt">
+            <h2>
+              It Comes In Waves (2021)
+            </h2>
+            <p>
+              Made with: add logo later
+            </p>
+            <p>
+              Interactive anxiety-regulation game based on Cognitive Behavioral Therapy (CBT) research.
+          </div>
+        </div>
+    </div>
+  </body>
 </html>
