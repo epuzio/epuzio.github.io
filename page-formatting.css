@@ -1,7 +1,30 @@
+:root {
+  --accent-color: #444444; /* Blue */
+}
+
 body {
-  max-width: 70em;
+  max-width: 90em;
   margin: 0 auto; /* Set left and right margins to auto */
-  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1 {
+  font-family: Hoefler Text, "Georgia", serif;
+  font-weight: 500;
+}
+
+p1 {
+  font-family: DejaVu Sans Mono, serif;
+}
+
+p2 {
+  font-size: 25px;
+  font-family: Courier, Helvetica, sans-serif;
+}
+
+p {
+  font-weight: 200;
+  font-size: 25px;
+  font-family: Optima, Arial, monospace;
 }
 
 .page {
@@ -12,9 +35,11 @@ body {
 }
 
 .about-block {
-  background-color: tomato;
+  background-color: white;
+  /* background-color: tomato; */
   color: white;
-  padding: 20px;
+  /* padding: 20px; */
+  justify-content: space-around;
 }
 
 .about-text {
@@ -26,7 +51,10 @@ body {
 }
 
 .about-image {
-  width: 40%;
+  width: 30%;
+  align-items: left;
+  height: 100%; /* Set height to 100% */
+  display: flex;
 }
 
 .row:after {
@@ -36,68 +64,79 @@ body {
 }
 
 .button {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: white;
-  padding: 8px 16px;
+  background-color: white; /* Green */
+  border: solid black;
+  color: black;
+  padding: 6px 30px;
+  padding-bottom: 2px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 25px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  border-radius: 8px;
-
+  border-radius: 4px;
+  font-family: Hoefler Text, "Georgia", serif;
 }
 
 .button:hover {
-  background-color: #04AA6D;
-  color: white;
+  background-color: lightgray;
+  border: solid gray;
+  border-radius: 4px;
+  padding-bottom: 2px;
+  /* color: white; */
 }
 
 .navbar {
   overflow: hidden;
   background-color: white;
+  font-family: Hoefler Text, "Georgia", serif;
 }
 
 .navbar-pages a {
   float: right;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 30px;
   align-content: right;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: orange;
+  color: gray;
 }
 
 .navbar a:active {
-  background-color: orange;
   color: black;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .project-block {
-  background-color: indigo;
+  border: solid gray;
+  border-radius: 20px;
+  background-color: white;
   color: white;
-  padding: 10px;
   cursor: pointer;
   border-radius: 20px;
   /* width: 80%; */
+  justify-content: space-between;
+  padding: 10px;
   margin: 0 auto; /* Set left and right margins to auto */
+  margin: 20px 50px; /* Add some space around the cards */
 }
 
-.project-block:hover {
-  background-color: indigo;
+/* .project-block:hover {
+  background-color: white;
   color: white;
-  padding: 20px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .project-txt {
   width: 60%;
@@ -109,4 +148,31 @@ body {
 
 .project-img {
   width: 40%;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+  .about-block {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%; /* Make both the image and text take full width */
+    padding: 15px; /* Add padding to the image and text */
+  }
+}
+
+
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+  .project-block {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .project-image,
+  .project-text {
+    width: 100%; /* Make both the image and text take full width */
+  }
 }
