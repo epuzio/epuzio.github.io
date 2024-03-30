@@ -3,22 +3,35 @@
 }
 
 body {
-  max-width: 90em;
+  max-width: 95em;
   margin: 0 auto; /* Set left and right margins to auto */
 }
 
 h1 {
   font-family: Hoefler Text, "Georgia", serif;
   font-weight: 500;
+  font-size: 25px;
+}
+
+h2 {
+  font-family: Hoefler Text, "Georgia", serif;
+  font-weight: 1000;
+  font-size: 22px;
 }
 
 p1 {
   font-family: DejaVu Sans Mono, serif;
+  font-size: 22px;
 }
 
 p2 {
-  font-size: 25px;
+  font-size: 20px;
   font-family: Courier, Helvetica, sans-serif;
+}
+
+p3 {
+  font-size: 18px;
+  font-family: Optima, Helvetica, sans-serif;
 }
 
 p {
@@ -30,15 +43,22 @@ p {
 .page {
     display: block;
     margin: 0 auto;
-    padding: .95em;
+    padding: .90em;
     page-break-after: always; 
+}
+
+.resume-element{
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
 }
 
 .about-block {
   background-color: white;
   /* background-color: tomato; */
   color: white;
-  /* padding: 20px; */
+  width: 70%;
+  margin: 0 auto;
   justify-content: space-around;
 }
 
@@ -47,14 +67,13 @@ p {
   background-color: white;
   color: black;
   border: none;
-  padding: 15px;
 }
 
 .about-image {
   width: 30%;
-  align-items: left;
-  height: 100%; /* Set height to 100% */
+  height:100%;
   display: flex;
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
 .row:after {
@@ -67,12 +86,12 @@ p {
   background-color: white; /* Green */
   border: solid black;
   color: black;
-  padding: 6px 30px;
+  padding: 6px 10px;
   padding-bottom: 2px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 20px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -87,6 +106,8 @@ p {
   padding-bottom: 2px;
   /* color: white; */
 }
+
+
 
 .navbar {
   overflow: hidden;
@@ -113,24 +134,36 @@ p {
   color: black;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
+
+
 .project-block {
-  border: solid gray;
-  border-radius: 20px;
+  border: solid black;
+  /* border-radius: 20px; */
   background-color: white;
   color: white;
   cursor: pointer;
-  border-radius: 20px;
-  /* width: 80%; */
+  /* border-radius: 20px; */
+  width: 32%;
   justify-content: space-between;
-  padding: 10px;
-  margin: 0 auto; /* Set left and right margins to auto */
-  margin: 20px 50px; /* Add some space around the cards */
+  /* padding: 10px; */
+  margin: 20px auto; /* Set left and right margins to auto */
 }
 
 /* .project-block:hover {
@@ -138,28 +171,31 @@ p {
   color: white;
 } */
 
+.project-img {
+  max-width: 100%;
+}
+
 .project-txt {
-  width: 60%;
   background-color: white;
   color: black;
   border: none;
   padding: 15px;
 }
 
-.project-img {
-  width: 40%;
-}
+
 
 /* Media query for small screens */
 @media only screen and (max-width: 768px) {
-  .about-block {
+  .row {
     flex-direction: column; /* Stack items vertically */
+  }
+  .about-block{
+    padding: 0px;
   }
 
   .about-image,
   .about-text {
     width: 100%; /* Make both the image and text take full width */
-    padding: 15px; /* Add padding to the image and text */
   }
 }
 
