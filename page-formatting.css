@@ -10,22 +10,22 @@ body {
 h1 {
   font-family: Hoefler Text, "Georgia", serif;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 h2 {
   font-family: Hoefler Text, "Georgia", serif;
   font-weight: 1000;
-  font-size: 22px;
+  font-size: 14px;
 }
 
 p1 {
   font-family: DejaVu Sans Mono, serif;
-  font-size: 22px;
+  font-size: 15px;
 }
 
 p2 {
-  font-size: 20px;
+  font-size: 12px;
   font-family: Courier, Helvetica, sans-serif;
 }
 
@@ -36,7 +36,7 @@ p3 {
 
 p {
   font-weight: 200;
-  font-size: 25px;
+  font-size: 15px;
   font-family: Optima, Arial, monospace;
 }
 
@@ -91,7 +91,7 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -121,9 +121,10 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 30px;
+  
   align-content: right;
   transition: color 0.3s ease;
+  font-size: 20px;
 }
 
 .navbar a:hover {
